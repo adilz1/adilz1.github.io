@@ -1,0 +1,155 @@
+<html><head> 
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&amp;display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <style type="text/css" id="dcoder_stylesheet">html{
+  background-image:linear-gradient(rgba(0,0,100,0.7),rgba(0,0,1,0.9)),url(https://miro.medium.com/max/12032/0*DypQzAMdE9cudggX);
+ background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  
+  font-size:4vw;
+  background-attachement:fixed;
+  
+  }
+#title{
+  
+  color:white;
+  text-align:center;
+  font-family: 'Merriweather Sans', sans-serif;
+  }
+
+#description{
+  color:white;
+  text-align:center;
+  }
+
+#label{
+  color:white;
+  font-family: 'Merriweather Sans', sans-serif;
+  }
+
+.input{
+  width:80vw;
+  height:7vh;
+  min-height:30px;
+  border:none;
+  border-radius:9px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size:4vw;
+  }
+
+
+
+.inputt{
+  width:80vw;
+  height:17vh;
+  min-height:30px;
+  border:none;
+  border-radius:9px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size:4vw;
+  text-align:left;
+  vertical-align:top;
+  }
+
+
+
+
+input[type=radio]{
+  border:0px;
+  min-height:3vh;
+    min-width:5vw;
+  
+  
+  }
+
+input[type=checkbox]{
+  border:0px;
+  min-height:3vh;
+    min-width:5vw;}
+.button{
+  border:none;
+  width:30vw;
+  height:8vh;
+  font-size:4vw;
+  border-radius:9px;
+  transition: color 0.4s linear;
+  transition: background-color 0.5s linear;
+  }
+
+
+.button:hover{
+  background-color:cyan;
+  color:white;
+  }</style></head> 
+ <body> 
+  <h1 id="title">please fill the survey below</h1> 
+  <p id="description">thanks for taking your time</p> 
+  <br> 
+  <br> 
+  <br> 
+  <form id="survey-form"> 
+   <label id="label" for="name-label"> Name:</label> 
+   <br> 
+   <input class="input" type="text" id="name-label" placeholder="please enter your name"> 
+   <br> 
+   <br> 
+   <label id="label" for="email-label"> Email: </label> 
+   <br> 
+   <input type="email" id="email-label" class="input" placeholder="Please enter your email"> 
+   <br> 
+   <br> 
+   <label id="label" for="number-label"> Age: </label> 
+   <br> 
+   <input type="number" placeholder="Please enter your age" min="13" max="60" id="number-label" class="input"> 
+   <br> 
+   <br> 
+   <label id="label" for="dropdown">Your favorite programming language</label> 
+   <br> 
+   <select id="dropdown" class="input"> <option>Python</option> <option>Javascript</option> <option>C++</option> <option>Java</option> <option>Other</option> </select> 
+   <br> 
+   <br> 
+   <label id="label">why do you program?</label> 
+   <br> 
+   <input type="radio" id="school" name="reason"> 
+   <label for="school" id="label"> School</label> 
+   <br> 
+   <input type="radio" id="Work" name="reason"> 
+   <label for="Work" id="label"> Work</label> 
+   <br> 
+   <input type="radio" id="Hobby" name="reason"> 
+   <label for="Hobby" id="label"> Hobby</label> 
+   <br> 
+   <input type="radio" id="Other" name="reason"> 
+   <label for="Other" class="radio" id="label"> Other</label> 
+   <br> 
+   <br> 
+   <label id="label">What do you program?</label> 
+   <br> 
+   <input type="checkbox" value"games" id="games" name="reason"> 
+   <label for="games" id="label"> Games</label> 
+   <br> 
+   <input type="checkbox" value="frontend" id="frontend" name="reason"> 
+   <label for="frontend" id="label"> Front End</label> 
+   <br> 
+   <input type="checkbox" value="backend" id="backend" name="reason"> 
+   <label for="backend" id="label">Back End</label> 
+   <br> 
+   <input type="checkbox" value="other" id="Other1" name="reason"> 
+   <label for="Other1" class="radio" id="label"> Other</label> 
+   <br> 
+   <br> 
+   <label id="label" for="suggestion"> If you have any suggestions please write them here:<label><br> <textarea id="suggestion" class="inputt"></textarea> <br><br> <button class="button" id="submit" type="submit">Submit</button> </label></label> 
+  </form> 
+ 
+<script type="text/javascript" id="dcoder_script">var character = document.getElementById("player");
+var html = document.getElementById("html");
+function jump(){
+  
+    if(character.classList == "animate"){return}
+     character.classList.add("animate"); 
+     setTimeout(function(){
+        character.classList.remove("animate");
+         },1000);
+         
+         }</script></body></html>
